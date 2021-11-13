@@ -7,7 +7,7 @@ s = '867'
 #  ---- main logic ------ 
 
 s = "4325"
-# s = '867'
+s = '867'
 final = []
 if len(s) == 4:
     # first case.
@@ -30,7 +30,6 @@ if len(s) == 4:
 else:
     s = '867'
     l1 = list(s)
-    print(l1)
     # first case.
     a = int(l1[0])
     b = int(''.join(l1[1:]))
