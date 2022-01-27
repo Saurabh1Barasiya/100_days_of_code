@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style> 
+    .right{
+        position: absolute;
+        right: 40px;
+        /* float: right;
+        color:aqua;
+        font-size: 30px;
+        background-color: blue; */
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- <h1>my name is my name</h1>
+    <p>my total income is my income</p> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="imgs/books.png" width="30" height="30" />
+            E-Library
+        </a>
+
+        <!-- toggle button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.aspx">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link navbar-brand" href="#">Terms</a>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav right">
+                <li class="nav-item active">
+                    <a class="nav-link"  >View Books</a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" ID="LinkButton1" runat="server">User Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" ID="LinkButton2" runat="server">Sign Up</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" ID="LinkButton3" runat="server">Logout</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" ID="LinkButton7" runat="server">Hello user</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer1" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <p>
+                        <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>
+                        &nbsp;
+                        <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
+                        &nbsp;
+                        <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
+                        &nbsp;
+                        <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
+                        &nbsp;
+                        <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
+                        &nbsp;
+                         <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="footer2" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <p style="color:whitesmoke">&copy All right Reversed. </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ./Footer -->
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
