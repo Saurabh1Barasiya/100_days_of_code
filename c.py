@@ -45,6 +45,12 @@ def fibonacci(n):
         a, b = b, a + b
 print(fibonacci(10))
 exit()
-'''
-super_herios = ["IronMen","captan meriaca","thor","hulk","black widow","spider"]
-print(super_herios[1])
+# '''
+# super_herios = ["IronMen","captan meriaca","thor","hulk","black widow","spider"]
+# print(super_herios[1])
+
+d = {'a':5,'b':2,'c':3,'d':10,'e':1}
+key=sorted(d.keys())
+val = sorted(d.values(),reverse=True)
+print(key)
+print(val)
