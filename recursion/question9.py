@@ -6,6 +6,7 @@
 #     addtion += i
 # print(addtion)
 
+# get sum of a array using recursion.
 def getSum(arr):
     if len(arr) == 0:
         return 0
@@ -14,6 +15,10 @@ def getSum(arr):
     return arr[0] + getSum(arr[1:])
 ans = getSum([1,2,3,4,5])
 print(ans)
+
+
+
+
 
 
 
