@@ -62,3 +62,7 @@ print(obj.longestCommonPrefix(["flower","flow","flight"]))
 
 strs=["flower","flow","flight"]
 print(strs[0][0])
+
+
+
+# ----------------------------
