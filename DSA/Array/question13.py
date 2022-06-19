@@ -1,5 +1,5 @@
 # [0, 0, 0, 1, 1, 1]
-# get zeros first and ones last.
+# get zeros first and ones last .
 
 def diffrencieat(arr):
     zeros = []
