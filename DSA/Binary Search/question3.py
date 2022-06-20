@@ -1,5 +1,6 @@
 # [1,2,3,3,5]
-# c
+# find left most index and right most index of the key in the array.
+# using binar search.
 
 
 # binary search always sorted elements par hi apply hogi.
