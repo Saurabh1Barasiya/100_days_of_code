@@ -1,5 +1,5 @@
 # find piviot element(index) in array.
-# 
+# and search element in the array.
 # # arr = [0,10,5,2]
 
 def binary_search(arr,s,e,key):
@@ -16,6 +16,7 @@ def binary_search(arr,s,e,key):
             end = mid - 1
         mid = start+(end-start)//2
     return -1
+
 
 
 def binary_search_pivit_element_index(array):
