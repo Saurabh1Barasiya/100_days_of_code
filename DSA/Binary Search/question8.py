@@ -49,3 +49,6 @@ while i < len(arr)-1:
     l1.append( sum(arr[0:i+1]) if sum(arr[0:i+1]) > sum(arr[i+1:]) else sum(arr[i+1:]))
     i += 1
 print(l1)
+
+
+# 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
