@@ -11,7 +11,6 @@ def rotate(arr,k):
     # copy temp to arr
     for index,value in enumerate(temp):
         arr[index] = value
-
     return arr
 
 if __name__ == '__main__':
