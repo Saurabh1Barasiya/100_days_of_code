@@ -1,3 +1,5 @@
+# Remove duplicate Occurrences from a string .
+
 # aaa -- >  ""
 # aaabbbc -- > c 
 # aaabbdbccc -- > db
