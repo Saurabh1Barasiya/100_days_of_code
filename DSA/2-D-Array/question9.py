@@ -1,4 +1,4 @@
-# get sum of 2-dimensional array.
+# get sum of 2-d Array in python.
 def get_sum(matrix,row,col):
     sum_ = 0
     for i in range(row):
