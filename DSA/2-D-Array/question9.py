@@ -6,7 +6,6 @@ def get_sum(matrix,row,col):
             sum_ += matrix[i][j]
     return sum_
 
-
 if __name__ == '__main__':
     matrix = [
         [1,2,3],
