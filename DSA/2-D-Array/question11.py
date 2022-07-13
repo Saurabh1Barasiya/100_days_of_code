@@ -12,7 +12,7 @@ def get_max_row_index(matrix,row,col):
             large_sum = sum_
             max_row = i
     return max_row
-
+    
 if __name__ == '__main__':
     matrix = [
         [1, 2 ,100],
