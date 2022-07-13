@@ -1,8 +1,7 @@
 # get largest maximum row index.
 
 def get_max_row_index(matrix,row,col):
-    max_row = 0
-    
+    max_row = -1
     large_sum = 0
     for i in range(row):
         sum_ = 0
@@ -12,7 +11,7 @@ def get_max_row_index(matrix,row,col):
             large_sum = sum_
             max_row = i
     return max_row
-    
+
 if __name__ == '__main__':
     matrix = [
         [1, 2 ,100],
