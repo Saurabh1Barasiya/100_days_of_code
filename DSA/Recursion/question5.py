@@ -1,4 +1,4 @@
-# check array is array or not using recursion.
+# check array is sorted or not using recursion.
 
 def is_sorted(arr):
     if len(arr) == 0 or len(arr) == 1:
