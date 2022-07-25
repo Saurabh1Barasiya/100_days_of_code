@@ -24,3 +24,4 @@ if __name__ == '__main__':
     print(len(ans))
 
     # ['abc', 'acb', 'bac', 'bca', 'cba', 'cab']
+    
