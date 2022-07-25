@@ -1,4 +1,4 @@
-# subsequences of a string. prime
+# subsequences of a string.
 # abc = [['c'], ['b'], ['b', 'c'], ['a'], ['a', 'c'], ['a', 'b'], ['a', 'b', 'c']]
 
 def subsequences(string,index,output,ans):
