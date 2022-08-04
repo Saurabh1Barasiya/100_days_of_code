@@ -52,7 +52,23 @@ class Circular_list:
                 visitd[temp] = True
                 temp = temp.next      
         return False
-            
+
+    
+    def is_floyd_cycle(self):
+        if self.start == None:
+            return False
+        
+        slow = self.start
+        fast = self.start
+        while slow != None and fast != None:
+            fast = fast.next
+            if fast != None:
+                fast = fast.next
+            slow = slow.next
+            if fast == slow:
+                return True
+        return False
+
     
     def view_list(self):
         temp = self.start
@@ -66,9 +82,9 @@ class Circular_list:
 
 cc = Circular_list()
 cc.insert_At_beg(4)
-# cc.insert_At_beg(5)
-# cc.insert_At_beg(6)
-# cc.insert_At_beg(7)
+cc.insert_At_beg(5)
+cc.insert_At_beg(6)
+cc.insert_At_beg(7)
 
 # cc.insert_at_last(8)
 # cc.insert_at_last(9)
@@ -84,3 +100,5 @@ cc.insert_At_beg(4)
 
 ans = cc.is_circular()
 print("\n Circular or not : ",ans)
+ans = cc.is_floyd_cycle()
+print("\n Floyd Cycle or not : ",ans)
