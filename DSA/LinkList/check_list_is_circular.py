@@ -24,6 +24,8 @@ class Circular_list:
     
 
     def is_circular(self):
+        # first approch
+        '''
         if self.start == None:
             return True
         
@@ -35,8 +37,22 @@ class Circular_list:
             return True
         else:
             return False
+        '''
 
-
+        if self.start == None:
+            return True
+        
+        temp = self.start
+        visitd = {}   
+        while temp != None:
+            if temp in visitd:
+                print("visitd",visitd)  
+                return True
+            else:
+                visitd[temp] = True
+                temp = temp.next      
+        return False
+            
     
     def view_list(self):
         temp = self.start
