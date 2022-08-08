@@ -39,11 +39,11 @@ class Linklist:
             curr = curr.next
         '''
 
-        
+
         # map or array ka concept.
         #      O(n) ---- > T.C
         #      O(n)  ---- > S.C
-        curr = self.start  
+        curr = self.start
         prev = None  
         visited = {}
         while curr != None:
