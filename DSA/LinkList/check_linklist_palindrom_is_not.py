@@ -1,8 +1,4 @@
-# create saperate linklist of 0s 1s and 2s.
-# ye question me ans sahi nahi aa raha h.
-
-# we change the stap approch same rahegi.
-
+# linklist is palindrom or not.
 
 class Node:
     '''
