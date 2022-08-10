@@ -33,7 +33,7 @@ class Linklist:
             temp.next= new_node
    
 
-    def is_palindrome(self):
+    def is_palindrome_using_array(self):
         '''Return True if palindrome else False'''
 
         # Time complexity --> O(n) 
@@ -57,7 +57,46 @@ class Linklist:
         return True
 
 
+    def get_middle(self):
+        slow = self.start
+        fast = slow.next
 
+        while fast != None and fast.next != None:
+            fast = fast.next.next
+            slow = slow.next
+        return slow
+
+    def revers_remening(self,temp):
+        curr = temp
+        prev = None
+
+        while curr:
+            forword = curr.next
+            curr.next=prev
+            prev = curr
+            curr = forword
+        return prev
+
+
+
+    def is_palindrom_using_linkist_itself(self):
+        # time complexity --> O(n).
+        # space complexity --> O(1).
+        if self.start == None or self.start.next == None:
+            return True
+        else:
+            middle = self.get_middle()
+            temp = middle.next
+            middle.next = self.revers_remening(temp)
+            head1 = self.start
+            head2 = middle.next
+
+            while head2:
+                if head1.data != head2.data:
+                    return False
+                head1 = head1.next
+                head2 = head2.next
+            return True
 
     def view_data(self):
         '''
@@ -76,18 +115,26 @@ class Linklist:
 
 
 my_list = Linklist()
-my_list.inser_at_last(1)
-my_list.inser_at_last(1)
-my_list.inser_at_last(2)
-my_list.inser_at_last(1)
-my_list.inser_at_last(1)
+# my_list.inser_at_last(1)
+# my_list.inser_at_last(1)
+# my_list.inser_at_last(1)
+# my_list.inser_at_last(0)
+# my_list.inser_at_last(1)
+# my_list.inser_at_last(1)
 # my_list.inser_at_last(1)
 
+my_list.inser_at_last(1)
+my_list.inser_at_last(2)
+my_list.inser_at_last(2)
+my_list.inser_at_last(1)
 
-my_list.view_data()
+
+# my_list.view_data()
 
 
-val = my_list.is_palindrome()
+# val = my_list.is_palindrome_using_array()
+val = my_list.is_palindrom_using_linkist_itself()
+
 if val:
     print("Linklist is palindrome.")
 else:
